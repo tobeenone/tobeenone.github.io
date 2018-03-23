@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        三菱接口文档规范｜undefined
+        乾卦｜undefined
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/2018/03/23/三菱接口文档规范/">
+    <link rel="canonical" href="http://yoursite.com/2018/03/23/乾卦/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -115,134 +115,141 @@
 </script>
 
 <!-- Main Content -->
-
-<!--only post-->
-
-
-<img class="wechat-title-img"
-     src="undefined http://img.zcool.cn/community/017e71583d2db7a801219c7712cc31.jpg@2o.jpg ">
-
-
 <style>
-    
-    header.intro-header {
-        background-image: url('undefined http://img.zcool.cn/community/017e71583d2db7a801219c7712cc31.jpg@2o.jpg undefined')
+    .poetry-container {
+        background-color: rgba(255, 248, 220, 0.5);
+        padding-top: 43px;
+        margin-top: -43px;
+        text-align: center;
     }
 
-    
+    .poetry-container .poetry-content {
+        writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        margin: 100px auto 0;
+        overflow: auto;
+        max-width: 90%;
+        max-height: 700px;
+        display: inline-block;
+        text-align: left;
+        padding: 5px 15px 30px;
+    }
+
+    .poetry-head {
+        width: 100%;
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    .poetry-container .poetry-content h2 {
+        color: #fff;
+        font-family: STkaiti;
+        font-size: 34px;
+        text-indent: 65px;
+        float: left;
+        margin-top: 0;
+    }
+
+    .poetry-container .poetry-content h2 span {
+        background-color: black;
+        padding: 2px 1px;
+        border-radius: 3px;
+    }
+
+    .poetry-container .poetry-content p {
+        clear: both;
+        font-size: 24px;
+        font-family: STSong;
+        letter-spacing: 8px;
+        text-shadow: 0 0 1px rgba(15, 15, 15, .3);
+        text-indent: 63px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    /* ipad */
+    @media screen and (max-width: 768px) {
+        .poetry-container .poetry-content {
+            max-height: 480px;
+            max-width: 100%;
+            margin: 80px auto 0;
+            padding-bottom: 10px;
+        }
+
+        .poetry-container .poetry-content p {
+            font-size: 16px;
+            text-indent: 46px;
+            line-height: 33px;
+            letter-spacing: 6px;
+            font-family: unset;
+        }
+
+        .poetry-container .poetry-content h2 {
+            margin-right: 6px;
+            font-size: 22px;
+            text-indent: 24px;
+            font-family: unset;
+        }
+
+        .poetry-container .poetry-content h2 span {
+            padding: 8px 5px;
+        }
+    }
+
+    /*手机屏幕*/
+    @media screen and (max-width: 400px) {
+        .poetry-container .poetry-content {
+            max-height: 410px;
+            padding-bottom: 20px;
+        }
+
+        .poetry-container .poetry-content p {
+            line-height: 30px;
+            letter-spacing: 3px;
+        }
+
+    }
+
+
 </style>
-
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>三菱接口文档规范</h1>
-                    
-                    <span class="meta">
-                         作者 Bee
-                        <span>
-                          日期 2018-03-23
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
-            三菱接口文档规范
-        </span>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h2 id="接口约定"><a href="#接口约定" class="headerlink" title="接口约定"></a>接口约定</h2><ul>
-<li>接口地址为:http://项目名称等信息/uri<br>uri为以下接口地址</li>
-<li><p>字段命名规则:统一驼峰式命名</p>
-</li>
-<li><p>正确返回<br>{<br>  “code”: “SUCCESS”,<br>  “data”: {}<br>}<br>{<br>  “code”: “SUCCESS”,<br>  “data”: []<br>}</p>
-</li>
-<li>错误返回<br>{<br>  “code”: “FAILED”,<br>  “userMsg”: “系统出错”<br>}</li>
-</ul>
-<hr>
-<h2 id="接口修改记录"><a href="#接口修改记录" class="headerlink" title="接口修改记录"></a>接口修改记录</h2><ul>
-<li>2018-01-02 10:24 增加接口13</li>
-<li>2018-01-02 15:30 接口字段cj改为worshop<br>…</li>
-</ul>
-<hr>
-<h2 id="接口列表"><a href="#接口列表" class="headerlink" title="接口列表"></a>接口列表</h2><h3 id="接口1-获取产品图号列表"><a href="#接口1-获取产品图号列表" class="headerlink" title="接口1:获取产品图号列表"></a>接口1:获取产品图号列表</h3><p>接口地址:<code>/cxc/base/get_th</code></p>
-<p>调用方法:<code>POST</code></p>
-<p>接口描述:<code>获取产品图号列表</code></p>
-<p>输入示例:</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"workshopId"</span>: <span class="number">111</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出示例:</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"th"</span>: <span class="string">"41006021-29D"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>字段描述：</p>
-<blockquote>
-<p>workshopId ：车间编号<br>th ：图号</p>
-</blockquote>
-<hr>
-
-                <hr>
-                
-
-                <ul class="pager">
-                    
-                    
-                    <li class="next">
-                        <a href="/2018/03/23/乾卦/" data-toggle="tooltip" data-placement="top"
-                           title="乾卦">Next Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-
-                
-
-
-                <!--加入新的评论系统-->
-                
-            </div>
-
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#接口约定"><span class="toc-text">接口约定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#接口修改记录"><span class="toc-text">接口修改记录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#接口列表"><span class="toc-text">接口列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#接口1-获取产品图号列表"><span class="toc-text">接口1:获取产品图号列表</span></a></li></ol></li></ol>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Sidebar Container -->
-
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-
-                <!-- Friends Blog -->
-                
-            </div>
-        </div>
+<div class="poetry-container">
+    <!--导航黑色-->
+    <div class="poetry-head"></div>
+    <!--主内容-->
+    <div class="poetry-content">
+        <h2>
+                <span>
+                    乾卦
+                </span>
+        </h2>
+        <p>天行健,君子以自强不息</p>
 
     </div>
-</article>
+    <!--多说评论-->
+    <div class=" col-lg-6 col-lg-offset-3
+                        col-md-8 col-md-offset-2
+                        col-sm-10 col-sm-offset-1
+                        col-xs-12">
+        <hr>
+        
 
+        <ul class="pager">
+            
+            <li class="previous">
+                <a href="/2018/03/23/三菱接口文档规范/" data-toggle="tooltip" data-placement="top"
+                   title="三菱接口文档规范">&larr; Previous Post</a>
+            </li>
+            
+            
+        </ul>
 
+        
+    </div>
 
-
+</div>
 
 
 
