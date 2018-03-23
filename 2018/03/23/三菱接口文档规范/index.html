@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="接口约定 接口地址为:http://项目名称等信息/uriuri为以下接口地址 字段命名规则:统一驼峰式命名  正确返回{  “code”: “SUCCESS”,  “data”: {}}{  “code”: “SUCCESS”,  “data”: []}  错误返回{  “code”: “FAILED”,  “userMsg”: “系统出错”}   接口修改记录 2018-01-02 10:24">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三菱接口文档规范">
 <meta property="og:url" content="http://yoursite.com/2018/03/23/三菱接口文档规范/index.html">
 <meta property="og:site_name" content="Bee Xu">
+<meta property="og:description" content="接口约定 接口地址为:http://项目名称等信息/uriuri为以下接口地址 字段命名规则:统一驼峰式命名  正确返回{  “code”: “SUCCESS”,  “data”: {}}{  “code”: “SUCCESS”,  “data”: []}  错误返回{  “code”: “FAILED”,  “userMsg”: “系统出错”}   接口修改记录 2018-01-02 10:24">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-23T05:58:07.197Z">
+<meta property="og:updated_time" content="2018-03-23T06:16:53.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三菱接口文档规范">
+<meta name="twitter:description" content="接口约定 接口地址为:http://项目名称等信息/uriuri为以下接口地址 字段命名规则:统一驼峰式命名  正确返回{  “code”: “SUCCESS”,  “data”: {}}{  “code”: “SUCCESS”,  “data”: []}  错误返回{  “code”: “FAILED”,  “userMsg”: “系统出错”}   接口修改记录 2018-01-02 10:24">
 
 
 
@@ -306,7 +309,33 @@
       
 
       
-        
+        <h2 id="接口约定"><a href="#接口约定" class="headerlink" title="接口约定"></a>接口约定</h2><ul>
+<li>接口地址为:http://项目名称等信息/uri<br>uri为以下接口地址</li>
+<li><p>字段命名规则:统一驼峰式命名</p>
+</li>
+<li><p>正确返回<br>{<br>  “code”: “SUCCESS”,<br>  “data”: {}<br>}<br>{<br>  “code”: “SUCCESS”,<br>  “data”: []<br>}</p>
+</li>
+<li>错误返回<br>{<br>  “code”: “FAILED”,<br>  “userMsg”: “系统出错”<br>}</li>
+</ul>
+<hr>
+<h2 id="接口修改记录"><a href="#接口修改记录" class="headerlink" title="接口修改记录"></a>接口修改记录</h2><ul>
+<li>2018-01-02 10:24 增加接口13</li>
+<li>2018-01-02 15:30 接口字段cj改为worshop<br>…</li>
+</ul>
+<hr>
+<h2 id="接口列表"><a href="#接口列表" class="headerlink" title="接口列表"></a>接口列表</h2><h3 id="接口1-获取产品图号列表"><a href="#接口1-获取产品图号列表" class="headerlink" title="接口1:获取产品图号列表"></a>接口1:获取产品图号列表</h3><p>接口地址:<code>/cxc/base/get_th</code></p>
+<p>调用方法:<code>POST</code></p>
+<p>接口描述:<code>获取产品图号列表</code></p>
+<p>输入示例:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"workshopId"</span>: <span class="number">111</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出示例:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"th"</span>: <span class="string">"41006021-29D"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>字段描述：</p>
+<blockquote>
+<p>workshopId ：车间编号<br>th ：图号</p>
+</blockquote>
+<hr>
+
       
     </div>
     
@@ -326,22 +355,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/03/23/接口文档规范/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -390,8 +403,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -410,7 +432,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -437,6 +459,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#接口约定"><span class="nav-number">1.</span> <span class="nav-text">接口约定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口修改记录"><span class="nav-number">2.</span> <span class="nav-text">接口修改记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口列表"><span class="nav-number">3.</span> <span class="nav-text">接口列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#接口1-获取产品图号列表"><span class="nav-number">3.1.</span> <span class="nav-text">接口1:获取产品图号列表</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
